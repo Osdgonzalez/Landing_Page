@@ -1,0 +1,296 @@
+.centrar-txt{
+    text-align: center;
+}
+
+
+.navegacion{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    padding: 1.5rem;
+}
+.nav-sec1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-sec2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-sec3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-sec4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-sec2 a, .nav-sec3 a, .nav-sec4 a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown-menu a{
+    color: rgb(101, 165, 5);
+}
+
+
+.prueba0{
+    z-index: 1;
+    position: absolute;
+}
+.prueba{
+    z-index: 2;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+}
+.bienvenida{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+.botones-bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botones-bienvenida a{
+    border: 4px solid white!important;
+}
+
+.division{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 0.8fr 0.6fr 0.6fr 0.6fr 0.5fr 0.6fr
+}
+.seccion-3{
+    grid-row: 1 / 2;
+}
+.seccion-3-titulo{
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+}
+.seccion-3-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+.seccion-3-tarjetas div{
+    width: 18em;
+}
+.img-card{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 0 0 0;
+}
+
+.seccion-4{
+    grid-row: 2 / 3;
+    background-image: url("img/visita-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.seccion-4-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9em
+}
+
+.seccion-5{
+    display: grid;
+    grid-row: 3 / 4;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    margin-bottom: 3rem;
+}
+.seccion-5-tarjeta{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 8rem;
+}
+.seccion-5-titulo{
+    padding-top: 10rem;
+}
+
+.seccion-6{
+    grid-row: 4 / 5;
+    background-image: url("img/Pinic_love.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+.seccion-6-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9em
+}
+
+.seccion-7{
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #e4e4e4;
+}
+.seccion-7-tarjeta1{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    background-image: url("img/mujer-haciendo-ejercicio-foto-estetic.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+.seccion-7-tarjeta2{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    background-image: url("img/perro_mujer.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-8{
+    grid-row: 6 / 7;
+    background-color: #e4e4e4;
+}
+.seccion-8-tarjetas div{
+    width: 13rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.seccion-9{
+    grid-row: 7 / 8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+}
+.seccion-9-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.seccion-9-card{
+    display: flex;
+    width: 21rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.seccion-10{
+    grid-row: 8 / 9;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 0.4fr);
+    background-color: #303133;
+    justify-items: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+.seccion-10 p, .seccion-10 a{
+    color: white;
+}
+.seccion-10-text:hover{
+    color: #F2962F;
+}
+.seccion-10-4, .seccion-10-5, .seccion-10-6{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:900px) {
+    .navegacion{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 1.5rem;
+        justify-items: center;
+    }
+    .navegacion a{
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+    .prueba{
+        grid-template-rows: 50vh;
+        height: 20vh;
+
+    }
+
+    .bienvenida{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding-top: 2rem;
+        height: 30vh;
+
+    }
+    .seccion-4-contenido{
+
+        margin-top: 20em
+    }
+    .seccion-5{
+        grid-template-rows: 0.2fr 0.5fr;
+    }
+    .seccion-5-tarjeta{
+        margin-left: 2rem;
+        margin-right: 1.5rem;
+    }
+    .seccion-5-titulo{
+        padding-top: 7rem;
+        padding-bottom: 0rem;
+    }
+    .division{
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.3fr 0.2fr 0.3fr 0.3fr 0.6fr
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1230px) {
+
+    .seccion-3-tarjetas div{
+        width: 28em;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .division{
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.3fr 0.2fr 0.1fr 0.3fr 0.6fr
+    }
+    .seccion-7{
+        padding: 0rem;
+        flex-direction: column;
+    }
+    .seccion-8-tarjetas div{
+        width: 20em;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .seccion-10{
+        align-items: flex-start;
+    }
+
+    .seccion-10-4, .seccion-10-5, .seccion-10-6{
+        margin-top: 0rem;
+    }
+
+}
